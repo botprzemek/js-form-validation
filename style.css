@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+form {
+    width: 100%;
+    padding: 5% 25% 5% 25%;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[name="comment"]{
+    margin-bottom: 1rem;
+}
+
+button {
+    text-align: center;
+    width: 100%;
+}
+
+.shake {
+    box-sizing: border-box;
+    animation: shake 1250ms;
+    outline: 1px solid red !important;
+    transition: 250ms ease-in-out;
+}
+
+@keyframes shake {
+    100%, 0% {
+        transform: translate3d(0,0,0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translate3d(-4px,0,0);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translate3d(4px,0,0);
+    }	
+}
